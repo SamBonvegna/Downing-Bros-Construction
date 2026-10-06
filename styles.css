@@ -1,0 +1,50 @@
+:root{--bg:#0e0e0f;--bg2:#171718;--card:#1f1f21;--line:#2f2f32;--text:#ececec;--mute:#a0a0a5;--red:#c8102e;--red2:#e11d3f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:inherit}
+h1,h2,h3{font-family:Impact,"Arial Narrow Bold",system-ui,sans-serif;letter-spacing:.03em;text-transform:uppercase;line-height:1.1;margin:0 0 .5em}
+.site-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 24px;background:rgba(14,14,15,.95);border-bottom:2px solid var(--red);backdrop-filter:blur(6px)}
+.brand{font:1.4rem Impact,system-ui,sans-serif;letter-spacing:.06em;text-decoration:none}
+.brand span{color:var(--red)}.brand small{display:block;font:.6rem system-ui;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
+nav{display:flex;align-items:center;gap:20px}
+nav a{text-decoration:none;color:var(--mute);font-size:.9rem}nav a:hover{color:#fff}
+.btn{display:inline-block;background:var(--red);color:#fff!important;padding:12px 24px;border:2px solid var(--red);border-radius:3px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;cursor:pointer;font-size:.9rem}
+.btn:hover{background:var(--red2);border-color:var(--red2)}
+.btn-sm{padding:8px 14px}.btn-ghost{background:transparent;border-color:#555}.btn-ghost:hover{background:#222;border-color:var(--red)}
+.hero{min-height:78vh;display:flex;align-items:center;padding:60px 24px;background:linear-gradient(110deg,rgba(0,0,0,.9) 40%,rgba(200,16,46,.18)),repeating-linear-gradient(0deg,#1a1a1b 0 38px,#0c0c0d 38px 40px)}
+.hero-inner{max-width:1100px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(2.6rem,8vw,6rem)}.hero em{color:var(--red);font-style:normal}
+.eyebrow{color:var(--red2);letter-spacing:.25em;text-transform:uppercase;font-size:.8rem;font-weight:700}
+.lead{max-width:540px;color:var(--mute);font-size:1.15rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.section{max-width:1100px;margin:0 auto;padding:72px 24px}
+.section.alt{max-width:none;background:var(--bg2);padding-inline:max(24px,calc((100% - 1100px)/2))}
+.section h2{font-size:2.2rem;border-left:5px solid var(--red);padding-left:14px}
+.sub{color:var(--mute);margin-bottom:28px}
+.grid{display:grid;gap:18px}
+.services{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.services article{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--red);padding:22px;border-radius:3px}
+.services h3{font-size:1.2rem}.services p{margin:0;color:var(--mute)}
+.projects{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.proj{position:relative;padding:0;border:1px solid var(--line);background:#000;border-radius:3px;overflow:hidden;cursor:pointer;color:inherit;text-align:left}
+.proj img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .3s}
+.proj:hover img{transform:scale(1.05)}
+.proj span{position:absolute;inset:auto 0 0;padding:30px 14px 12px;background:linear-gradient(transparent,#000);font-weight:700}
+.proj small{display:block;color:var(--red2);font-weight:400}
+.card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:24px;margin-top:18px}
+label{display:block;font-weight:700;margin-bottom:8px}
+.row{display:flex;gap:12px;flex-wrap:wrap}.row>input{flex:1 1 220px}
+input,textarea{width:100%;background:#0b0b0c;border:1px solid #3a3a3d;color:#fff;padding:13px;border-radius:3px;font:inherit;margin-bottom:12px}
+.row input{margin-bottom:0}.row+input,.row+textarea{margin-top:12px}
+input:focus,textarea:focus{outline:2px solid var(--red);border-color:var(--red)}
+.result{border-left:5px solid var(--mute)}.result.ok{border-left-color:#2fa84f}.result.far{border-left-color:var(--red)}
+.result h3{font-size:1.4rem}.result p{margin:.3em 0}
+#contact-form button{margin-top:6px}
+footer{border-top:2px solid var(--red);padding:32px 24px;text-align:center;color:var(--mute);background:#080808}
+footer p{margin:.3em 0}
+.lightbox{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.lightbox[hidden]{display:none}
+.lightbox img{max-width:min(94vw,1000px);max-height:78vh;border:2px solid var(--red)}
+.lightbox button{position:absolute;top:14px;right:22px;background:none;border:0;color:#fff;font-size:2.6rem;cursor:pointer}
+@media(max-width:640px){nav a:not(.btn){display:none}.site-header{padding:12px 16px}}

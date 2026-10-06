@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Downing Bros Construction | Masonry in East Greenwich, RI</title>
+<meta name="description" content="Stone, brick and block masonry in Rhode Island. Chimneys, patios, walls, walkways and restoration. Get a free estimate.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top">DOWNING <span>BROS</span> <small>Masonry</small></a>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#estimate">Free Estimate</a>
+    <a class="btn btn-sm" data-phone href="tel:+14015550100">(401) 555-0100</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Masonry &bull; East Greenwich, Rhode Island</p>
+      <h1>Built to <em>last</em>.<br>Laid by hand.</h1>
+      <p class="lead">Stone, brick and block work for homes and businesses across Rhode Island and beyond.</p>
+      <div class="cta">
+        <a class="btn" href="#estimate">Get a Free Estimate</a>
+        <a class="btn btn-ghost" data-phone href="tel:+14015550100">Call (401) 555-0100</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>What we build</h2>
+    <div class="grid services">
+      <article><h3>Chimneys</h3><p>New builds, rebuilds, repointing and crowns.</p></article>
+      <article><h3>Patios &amp; Walkways</h3><p>Pavers, bluestone and natural stone.</p></article>
+      <article><h3>Retaining Walls</h3><p>Dry-stack and mortared walls engineered to hold.</p></article>
+      <article><h3>Brick &amp; Block</h3><p>Foundations, veneers, steps and repairs.</p></article>
+      <article><h3>Outdoor Living</h3><p>Fireplaces, fire pits, kitchens and columns.</p></article>
+      <article><h3>Restoration</h3><p>Repointing and repair of historic masonry.</p></article>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <h2>Recent projects</h2>
+    <p class="sub">Click a project to enlarge. Replace the placeholder images in <code>/images</code> with your own photos.</p>
+    <div class="grid projects" id="project-grid"></div>
+  </section>
+
+  <section id="estimate" class="section">
+    <h2>Free estimate</h2>
+    <p class="sub">Enter your address to see if you qualify for a free on-site estimate. We cover a 50-mile radius of East Greenwich, RI.</p>
+    <form id="estimate-form" class="card" novalidate>
+      <label for="address">Property address</label>
+      <div class="row">
+        <input id="address" name="address" autocomplete="street-address" placeholder="123 Main St, Warwick, RI 02886" required>
+        <button class="btn" type="submit">Check Address</button>
+      </div>
+    </form>
+    <div id="result" class="card result" hidden aria-live="polite"></div>
+
+    <form id="contact-form" class="card" hidden novalidate>
+      <h3>Request your free estimate</h3>
+      <div class="row">
+        <input name="name" placeholder="Your name" required autocomplete="name">
+        <input name="phone" type="tel" placeholder="Phone" required autocomplete="tel">
+      </div>
+      <input name="email" type="email" placeholder="Email (optional)" autocomplete="email">
+      <textarea name="details" rows="3" placeholder="Tell us about the job"></textarea>
+      <button class="btn" type="submit">Send Request</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Downing Bros Construction</strong> &middot; 526 Middle Rd, East Greenwich, RI</p>
+  <p><a data-phone href="tel:+14015550100">(401) 555-0100</a> &middot; <a data-email href="mailto:info@example.com">info@example.com</a></p>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden><button aria-label="Close">&times;</button><img alt=""><p></p></div>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
