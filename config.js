@@ -1,8 +1,8 @@
 // Edit these values for the business.
 window.SITE = {
-  phoneDisplay: "(401) 555-0100",   // TODO: replace with real number
-  phoneHref: "+14015550100",
-  email: "info@example.com",        // TODO: replace; estimate requests are sent here
+  phoneDisplay: "(401) 490-1719",   // 
+  phoneHref: "+14014901719",
+  email: "downingbrosconstruction@gmail.com",        // estimate requests are sent here
   // Optional: a Formspree/Getform URL. If empty, requests open the visitor's email app.
   formEndpoint: "",
   // 526 Middle Rd, East Greenwich, RI (approximate; verify and adjust if needed)
