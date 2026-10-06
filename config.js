@@ -9,11 +9,10 @@ window.SITE = {
   origin: { lat: 41.6425, lng: -71.5235 },
   radiusMiles: 50,
   projects: [
-    { title: "Bluestone Patio", place: "Warwick, RI", img: "images/project-1.svg" },
-    { title: "Chimney Rebuild", place: "East Greenwich, RI", img: "images/project-2.svg" },
-    { title: "Stone Retaining Wall", place: "Narragansett, RI", img: "images/project-3.svg" },
-    { title: "Brick Walkway", place: "Providence, RI", img: "images/project-4.svg" },
-    { title: "Outdoor Fireplace", place: "Newport, RI", img: "images/project-5.svg" },
-    { title: "Historic Repointing", place: "Bristol, RI", img: "images/project-6.svg" }
+    { title: "Custom Showers & Tile", place: "Interior Tile", img: "images/shower.jpg" },
+    { title: "Floor-to-Ceiling Fireplaces", place: "Stone Fireplaces", img: "images/fireplace.jpg" },
+    { title: "Entry Walkways", place: "Pavers", img: "images/walkway.jpg" },
+    { title: "Hand-Laid Retaining Walls", place: "Natural Stone", img: "images/retaining-wall.jpg" },
+    { title: "Custom Patios", place: "Pavers", img: "images/patio.jpg" }
   ]
 };

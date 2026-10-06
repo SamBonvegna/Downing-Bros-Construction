@@ -17,12 +17,12 @@
     b.className = "proj";
     b.innerHTML = `<img loading="lazy" alt=""><span></span>`;
     b.querySelector("img").src = p.img;
-    b.querySelector("img").alt = `${p.title} in ${p.place}`;
+    b.querySelector("img").alt = `${p.title}`;
     b.querySelector("span").innerHTML = `${p.title}<small>${p.place}</small>`;
     b.onclick = () => {
       lb.querySelector("img").src = p.img;
       lb.querySelector("img").alt = p.title;
-      lb.querySelector("p").textContent = `${p.title} — ${p.place}`;
+      lb.querySelector("p").textContent = p.title;
       lb.hidden = false;
     };
     grid.append(b);
