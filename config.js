@@ -13,6 +13,10 @@ window.SITE = {
     { title: "Floor-to-Ceiling Fireplaces", place: "Stone Fireplaces", img: "images/fireplace.jpg" },
     { title: "Entry Walkways", place: "Pavers", img: "images/walkway.jpg" },
     { title: "Hand-Laid Retaining Walls", place: "Natural Stone", img: "images/retaining-wall.jpg" },
-    { title: "Custom Patios", place: "Pavers", img: "images/patio.jpg" }
+    { title: "Custom Patios", place: "Pavers", img: "images/patio.jpg" },
+    { title: "Brick Patios", place: "Clay Brick", img: "images/brick-patio.jpg" },
+    { title: "Concrete Walkways", place: "Poured Concrete", img: "images/concrete-walkway.jpg" },
+    { title: "Stone Hearths & Walls", place: "Natural Stone", img: "images/stone-hearth.jpg" },
+    { title: "Stone Veneer", place: "Home Exteriors", img: "images/stone-veneer.jpg" }
   ]
 };
