@@ -19,19 +19,19 @@ nav a{text-decoration:none;color:var(--mute);font-size:.9rem}nav a:hover{color:#
 .lead{max-width:540px;color:var(--mute);font-size:1.15rem}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .section{max-width:1100px;margin:0 auto;padding:72px 24px}
-.section.alt{max-width:none;background:var(--bg2);padding-inline:max(24px,calc((100% - 1100px)/2))}
+.section.alt{max-width:none;background:var(--bg2);padding-inline:max(24px,calc((100% - 1100px)/2 + 24px))}
 .section h2{font-size:2.2rem;border-left:5px solid var(--red);padding-left:14px}
 .sub{color:var(--mute);margin-bottom:28px}
 .grid{display:grid;gap:18px}
 .services{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 .services article{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--red);padding:22px;border-radius:3px}
 .services h3{font-size:1.2rem}.services p{margin:0;color:var(--mute)}
-.projects{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.projects{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}@media(min-width:900px){.projects{grid-template-columns:repeat(3,1fr)}}
 .proj{position:relative;padding:0;border:1px solid var(--line);background:#000;border-radius:3px;overflow:hidden;cursor:pointer;color:inherit;text-align:left}
 .proj img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .3s}
 .proj:hover img{transform:scale(1.05)}
 .proj span{position:absolute;inset:auto 0 0;padding:30px 14px 12px;background:linear-gradient(transparent,#000);font-weight:700}
-.proj small{display:block;color:var(--red2);font-weight:400}
+.proj small{display:block;color:#ff6b83;font-weight:400}
 .card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:24px;margin-top:18px}
 label{display:block;font-weight:700;margin-bottom:8px}
 .row{display:flex;gap:12px;flex-wrap:wrap}.row>input{flex:1 1 220px}
@@ -53,4 +53,4 @@ footer p{margin:.3em 0}
 .about>div{flex:1 1 320px}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .badges span{border:1px solid var(--red);color:#fff;padding:6px 14px;border-radius:2px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-@media(max-width:640px){.brand b{font-size:1.05rem}}
+@media(max-width:640px){.brand b{font-size:1.05rem}.btn-sm{white-space:nowrap;padding:8px 10px;font-size:.8rem}.brand img{width:36px;height:36px}}
