@@ -3,8 +3,9 @@ window.SITE = {
   phoneDisplay: "(401) 490-1719",   // 
   phoneHref: "+14014901719",
   email: "downingbrosconstruction@gmail.com",        // estimate requests are sent here
-  // Optional: a Formspree/Getform URL. If empty, requests open the visitor's email app.
-  formEndpoint: "",
+  // FormSubmit.co forwards requests to the email above (first submission needs a one-time activation click).
+  // If this is empty or fails, requests open the visitor's email app instead.
+  formEndpoint: "https://formsubmit.co/ajax/downingbrosconstruction@gmail.com",
   // 526 Middle Rd, East Greenwich, RI (approximate; verify and adjust if needed)
   origin: { lat: 41.6425, lng: -71.5235 },
   radiusMiles: 50,

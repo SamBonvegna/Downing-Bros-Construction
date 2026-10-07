@@ -79,6 +79,8 @@
     if (!f.get("name").trim() || !f.get("phone").trim()) return alert("Please enter your name and phone number.");
     const data = Object.fromEntries(f);
     data.address = $("#address").value.trim();
+    data._subject = "Free estimate request - " + data.name;
+    data._template = "table";
     if (S.formEndpoint) {
       try {
         const r = await fetch(S.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) });

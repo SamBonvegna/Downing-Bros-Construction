@@ -5,7 +5,7 @@ body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-ap
 a{color:inherit}
 h1,h2,h3{font-family:Impact,"Arial Narrow Bold",system-ui,sans-serif;letter-spacing:.03em;text-transform:uppercase;line-height:1.1;margin:0 0 .5em}
 .site-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 24px;background:rgba(14,14,15,.95);border-bottom:2px solid var(--red);backdrop-filter:blur(6px)}
-.brand{font:1.4rem Impact,system-ui,sans-serif;letter-spacing:.06em;text-decoration:none}
+.brand{display:flex;align-items:center;gap:10px}.brand b{font-weight:400;display:block}.brand{font:1.4rem Impact,system-ui,sans-serif;letter-spacing:.06em;text-decoration:none}
 .brand span{color:var(--red)}.brand small{display:block;font:.6rem system-ui;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
 nav{display:flex;align-items:center;gap:20px}
 nav a{text-decoration:none;color:var(--mute);font-size:.9rem}nav a:hover{color:#fff}
@@ -48,3 +48,9 @@ footer p{margin:.3em 0}
 .lightbox img{max-width:min(94vw,1000px);max-height:78vh;border:2px solid var(--red)}
 .lightbox button{position:absolute;top:14px;right:22px;background:none;border:0;color:#fff;font-size:2.6rem;cursor:pointer}
 @media(max-width:640px){nav a:not(.btn){display:none}.site-header{padding:12px 16px}}
+.about{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.about img{width:220px;height:220px;border-radius:4px;border:2px solid var(--red);object-fit:cover}
+.about>div{flex:1 1 320px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.badges span{border:1px solid var(--red);color:#fff;padding:6px 14px;border-radius:2px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:640px){.brand b{font-size:1.05rem}}
