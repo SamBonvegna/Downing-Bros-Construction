@@ -1,7 +1,7 @@
 // Edit these values for the business.
 window.SITE = {
-  phoneDisplay: "(401) 490-1719",   // 
-  phoneHref: "+14014901719",
+  phoneDisplay: "(401) 265-1663",   // 
+  phoneHref: "+14012651663",
   email: "downingbrosconstruction@gmail.com",        // estimate requests are sent here
   // FormSubmit.co forwards requests to the email above (first submission needs a one-time activation click).
   // If this is empty or fails, requests open the visitor's email app instead.
